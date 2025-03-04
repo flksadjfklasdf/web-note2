@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS web_note;
+DROP DATABASE IF EXISTS web_note2;
 
-CREATE DATABASE web_note;
+CREATE DATABASE web_note2;
 
-USE web_note;
+USE web_note2;
 
 CREATE TABLE user
 (
@@ -149,22 +149,22 @@ CREATE TABLE session
 );
 
 CREATE TABLE ip_ban (
-    ip VARCHAR(45) PRIMARY KEY,
-	ban_type INT(10) NOT NULL,
-	start_time DATETIME NOT NULL,
-	end_time DATETIME NULL DEFAULT NULL,
-	reason VARCHAR(255) NULL ,
-	created_at TIMESTAMP,
-	INDEX idx_ban_type (ban_type),
-	INDEX idx_start_time (start_time) ,
-	INDEX idx_end_time (end_time)
+                        ip VARCHAR(45) PRIMARY KEY,
+                        ban_type INT(10) NOT NULL,
+                        start_time DATETIME NOT NULL,
+                        end_time DATETIME NULL DEFAULT NULL,
+                        reason VARCHAR(255) NULL ,
+                        created_at TIMESTAMP,
+                        INDEX idx_ban_type (ban_type),
+                        INDEX idx_start_time (start_time) ,
+                        INDEX idx_end_time (end_time)
 );
 
 CREATE TABLE file_type (
- id CHAR(32) PRIMATY KEY
- type_name_en VARCHAR(255) NOT NULL,
- type_name_cn VARCHAR(255) NOT NULL,
- content_type VARCHAR(255) NOT NULL,
+                           id CHAR(32) PRIMARY KEY,
+                           type_name_en VARCHAR(255) NOT NULL,
+                           type_name_cn VARCHAR(255) NOT NULL,
+                           content_type VARCHAR(255) NOT NULL
 );
 
 

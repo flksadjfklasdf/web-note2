@@ -31,6 +31,7 @@ public class WebConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/file/d/**")
                 .excludePathPatterns("/file/authorize");
 
+
         registry.addInterceptor(new PrivilegeInterceptor());
 
 //        if (restrictDomain) {

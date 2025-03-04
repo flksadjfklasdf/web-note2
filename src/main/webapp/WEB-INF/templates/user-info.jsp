@@ -439,7 +439,7 @@ console.log(sortedArray); // 输出 [2, 3, 4, 5, 8]
                     $('#changeUserEmail').modal('show');
                 },
                 modifyKeepDays(){
-                    $('#editFileType').modal('show')
+                    $('#modifyKeepDays').modal('show')
                 },
                 doChangeKeepDays() {
                     // 校验参数是否为整数且大于0
