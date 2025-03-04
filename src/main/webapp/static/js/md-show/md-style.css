@@ -1,0 +1,108 @@
+/* 表格样式 */
+.md-view th, .md-view td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.md-view th {
+    background-color: #f2f2f2;
+}
+
+.md-view table {
+    margin-bottom: 10px;
+}
+.md-view li{
+    font-size: 20px;
+}
+p code{
+    color: #F09030;
+    background-color: #E4E4E4;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+p code:hover{
+    color: #CC99CD;
+    cursor: pointer;
+}
+table code{
+    color: #F09030;
+    background-color: #E4E4E4;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+table code:hover{
+    color: #CC99CD;
+    cursor: pointer;
+}
+ul code{
+    color: #F09030;
+    background-color: #E4E4E4;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+ul code:hover{
+    color: #CC99CD;
+    cursor: pointer;
+}
+
+p a{
+    text-decoration: none;
+}
+p a:hover{
+    color: #FFA2C2;
+}
+
+p{
+    font-size: 20px;
+}
+table{
+    font-size: 18px;
+}
+h2{
+    font-size: 36px;
+    font-weight: 540;
+}
+h3{
+    font-size: 32px;
+    font-weight: 540;
+}
+h4{
+    font-size: 28px;
+    font-weight: 540;
+}
+h5{
+    font-size: 24px;
+    font-weight: 540;
+}
+h6{
+    font-size: 22px;
+    font-weight: 540;
+}
+
+.custom-img {
+    max-height: 400px;
+    width: auto;
+    cursor: pointer;
+    border: 2px solid transparent; /* 默认无边框 */
+}
+
+/*.custom-img:hover {*/
+/*    border-color: red; !* 悬停时的边框颜色 *!*/
+/*}*/
+.custom-img:hover {
+    border-image: linear-gradient(45deg, #0089ff, #5e5eff); /* Gradient effect */
+    border-image-slice: 1; /* Ensures gradient covers the entire border */
+}

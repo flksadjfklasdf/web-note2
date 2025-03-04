@@ -1,0 +1,20 @@
+#sidebarMenu {
+    margin-top: 70px;
+}
+
+#u-pane {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+#u-content {
+    height: 100%;
+}
+
+#u-c-content {
+    height: 100%;
+}
+
+#u-c-sidebar {
+    width: 250px;
+}

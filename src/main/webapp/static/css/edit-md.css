@@ -1,0 +1,142 @@
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+main {
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.dropdown-toggle { outline: 0; }
+
+.btn-toggle {
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: var(--bs-emphasis-color);
+    background-color: transparent;
+}
+.btn-toggle:hover,
+.btn-toggle:focus {
+    color: rgba(var(--bs-emphasis-color-rgb), .85);
+    background-color: var(--bs-tertiary-bg);
+}
+
+.btn-toggle::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+}
+
+[data-bs-theme="dark"] .btn-toggle::before {
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+.btn-toggle[aria-expanded="true"] {
+    color: rgba(var(--bs-emphasis-color-rgb), .85);
+}
+.btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+}
+.btn-toggle-nav li:hover,
+.btn-toggle-nav li:focus {
+    background: linear-gradient(to right, #ffffff 0%, #CCCCCC 20%, #ffffff 100%);
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+/* 默认状态下隐藏图标 */
+.menu-ico {
+    visibility: hidden; /* 默认状态下隐藏图标 */
+    margin-right: 5px; /* 调整图标之间的右边距 */
+}
+
+/* 当鼠标悬停在 <li> 上时显示图标 */
+.menu-item:hover .menu-ico {
+    visibility: visible;
+}
+.menu-ico:hover {
+    background: radial-gradient(circle at center, #AAAAAA 0%, #ffffff 100%)
+}
+.no-resize {
+    resize: none;
+}
+
+/* 添加 Flexbox 布局 */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% 视口高度 */
+}
+
+.flex-item {
+    flex: 1;
+    overflow-y: auto; /* 当内容超出高度时显示滚动条 */
+    padding: 0 15px; /* 左右边距 */
+}
+
+.textarea-container,
+.div-container {
+    width: 50%;
+}
+
+.pointer{
+    cursor: pointer;
+}
+.menu-item.active {
+    background: linear-gradient(to right, #ffffff 0%, #BBBBBB 20%, #ffffff 100%);
+    color: #ffffff;
+}
+.orange-link{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.orange-link:hover{
+    color: orange;
+}
+.mini-image{
+    max-height: 100px;
+    max-width: 100px;
+}
+.mini-image-div{
+    height: 100px;
+    width: 100px;
+}
+.recent-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 当按下 Ctrl 键并将鼠标悬停在标题上时，改变标题颜色 */
+body.ctrl-pressed h1:hover,
+body.ctrl-pressed h2:hover,
+body.ctrl-pressed h3:hover,
+body.ctrl-pressed h4:hover,
+body.ctrl-pressed h5:hover,
+body.ctrl-pressed h6:hover {
+    color: #00ffa6; /* 你可以根据需要更改颜色 */
+    cursor: pointer; /* 更改鼠标指针样式，提示用户可点击 */
+}
+.ace_heading-highlight {
+    background-color: rgba(255, 0, 0, 0.2); /* 半透明红色背景 */
+}

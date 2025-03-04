@@ -1,0 +1,24 @@
+
+.description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2; /* 显示两行 */
+    min-height: 50px;
+}
+.card-text {
+    word-break: break-all;
+}
+.card{
+    min-height: 160px;
+}
+
+.create-document-link {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.create-document-link:hover {
+    color: #0056b3;
+}

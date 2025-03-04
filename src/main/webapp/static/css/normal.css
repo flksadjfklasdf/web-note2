@@ -1,0 +1,146 @@
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 7px; /* 滚动条宽度 */
+    height: 7px; /* 滚动条高度 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* 滚动条滑块颜色 */
+    border-radius: 3px; /* 滑块圆角 */
+}
+
+/* 指向滚动条滑块时的样式 */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* 滑块颜色变深 */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* 滚动条背景色 */
+}
+
+
+.search-form::placeholder {
+    color: #888888; /* 灰色 */
+}
+
+/* 设置搜索框的文本颜色 */
+.search-form {
+    color: #ffffff; /* 白色 */
+}
+.th-link{
+    color: #5e5e61;
+}
+.th-link:hover{
+    color: #0aaeff;
+}
+
+.th-nav-link{
+    color: #5e5e61;
+}
+.th-nav-link:hover{
+    color: #0aaeff;
+    background: #b5b5bc
+}
+.th-nav-link.active{
+    background: #b5b5bc
+}
+.th-nav-link.active a{
+    color: #0aaeff;
+}
+.hr-hover:hover{
+    color: #ff2193;
+}
+
+.link-red{
+    color: #ff1c00;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-red:hover{
+    color: #ff0055;
+}
+
+.link-blue{
+    color: #002eff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-blue:hover{
+    color: #4300ff
+}
+.page-link {
+    user-select: none;
+    cursor: pointer;
+}
+.link-s{
+    color: #3c4049;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-s:hover{
+    color: #0aaeff;
+}
+
+.hover-effect:hover {
+    color: #007bff; /* 淡蓝色 */
+    cursor: pointer;
+}
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#imageModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.5);
+    display: none; /* 初始时隐藏 */
+    align-items: center;
+    justify-content: center;
+    z-index: 100000000;
+}
+
+/* 内层DIV样式 */
+#imageContainer {
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+    background-color: rgba(128, 128, 128, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100000001; /* 确保图片容器在最上层 */
+    object-fit: cover; /* 保持比例并填充父容器 */
+}
+
+/* 图片样式 */
+#imageContainer img {
+    height: 100%;
+    max-width: 100%;
+    cursor: pointer; /* 鼠标悬停时显示手型光标 */
+    z-index: 100000002;
+}
+.img-ico{
+    user-select: none;
+    cursor:pointer;
+    position:fixed;
+    width:50px;
+    height:50px;
+    right:0;
+    top:0;
+
+}
+
+.img-ico i {
+    font-size: 50px;
+    color: white; /* 图标颜色为白色 */
+}
+
+.img-ico i:hover {
+    color: GRAY; /* 图标颜色为白色 */
+}
